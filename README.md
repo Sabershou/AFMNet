@@ -39,7 +39,7 @@ The data should be organized as follows:
                           |--...
 ```
 ### Training
-The code for 3DMatch is in afmnet_3DMatch. Use the following command for training.
+The code for 3DMatch is in afmnet_3dmatch. Use the following command for training.
 ```
 python trainval.py
 ```
