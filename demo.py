@@ -140,7 +140,7 @@ if __name__ == '__main__':
             points=o3d.utility.Vector3dVector(frag),
             lines=o3d.utility.Vector2iVector(lines),
         )
-        # 判断哪些是正确的线
+        
         src_f = apply_transform(src_f, transform)
         mask = np.sum(np.sqrt((ref_f - src_f) ** 2), axis=1) < 0.1
         inlier_ratio = np.mean(mask)
