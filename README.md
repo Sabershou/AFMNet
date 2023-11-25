@@ -19,9 +19,10 @@ python setup.py build develop
 ```
 Code has been tested with Ubuntu 16.04, Python 3.7, PyTorch 1.10.0, CUDA 10.2.
 
-## Dataset
-### 3DMatch
-The point cloud dataset can be downloaded from [PREDATOR](https://github.com/prs-eth/OverlapPredator), and the image dataset can be downloaded from [3DMatch](https://3dmatch.cs.princeton.edu/)
+## 3DMatch
+### Dataset
+The point cloud dataset can be downloaded from [PREDATOR](https://github.com/prs-eth/OverlapPredator), and the image dataset can be downloaded from [3DMatch](https://3dmatch.cs.princeton.edu/).
+Our constructed dataset can be downloaded from [here]().
 The data should be organized as follows:
 ```
 --data--3DMatch--metadata
@@ -36,4 +37,19 @@ The data should be organized as follows:
                           |                    |--cloud_bin_0_color.png
                           |                    |--...
                           |--...
+```
+### Training
+The code for 3DMatch is in afmnet_3DMatch. Use the following command for training.
+```
+python trainval.py
+```
+### Testing
+Use the following command for testing.
+```
+# 3DMatch
+python test.py --benchmark=3DMatch
+python eval.py --benchmark=3DMatch --method=ransac
+# 3DLoMatch
+python test.py --benchmark=3DLoMatch
+python eval.py --benchmark=3DLoMatch --method=ransac
 ```
