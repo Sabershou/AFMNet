@@ -18,3 +18,22 @@ pip install -r requirements.txt
 python setup.py build develop
 ```
 Code has been tested with Ubuntu 16.04, Python 3.7, PyTorch 1.10.0, CUDA 10.2.
+
+## Dataset
+### 3DMatch
+The point cloud dataset can be downloaded from [PREDATOR](https://github.com/prs-eth/OverlapPredator), and the image dataset can be downloaded from [3DMatch](https://3dmatch.cs.princeton.edu/)
+The data should be organized as follows:
+```
+--data--3DMatch--metadata
+              |--data--train--7-scenes-chess--camera-intrinsics.txt
+                    |      |               |--cloud_bin_0.pth
+                    |      |               |--cloud_bin_0.info.txt
+                    |      |               |--cloud_bin_0_color.png
+                    |      |--...          |--...
+                    |--test--7-scenes-redkitchen--camera-intrinsics.txt
+                          |                    |--cloud_bin_0.pth
+                          |                    |--cloud_bin_0.info.txt
+                          |                    |--cloud_bin_0_color.png
+                          |                    |--...
+                          |--...
+```
