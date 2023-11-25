@@ -1,2 +1,2 @@
 # AFMNet
-Point Cloud Registration based on Adaptively Fused Multimodal Features
+PyTorch implementation of the paper: Point Cloud Registration based on Adaptively Fused Multimodal Features
