@@ -2,7 +2,7 @@
 PyTorch implementation of the paper: Point Cloud Registration based on Adaptively Fused Multimodal Features
 ## Introduction
 Point cloud registration is a fundamental task in 3D vision, which plays an important role in various fields but faces challenges in geometrically weak or repetitive scenes. Traditional geometric-based methods struggle in these cases, while recent multimodal approaches improve robustness in weak scenes but rely on precise point cloud-image alignment, which is difficult in real-world, low-alignment environments. To address the above challenge, we propose the Adaptively Fused Multimodal Network (AFMNet). AFMNet establishes point-to-pixel correspondences at the sparse superpoint level and assigns weights to geometric and texture features, creating more distinct feature descriptors and reducing the impact of misalignment. Additionally, we introduce an image-guided confidence estimation strategy that assigns higher confidence levels to points within the alignment region, prioritizing their selection for registration. To better evaluate the robustness of point cloud registration methods in geometrically weak scenes, we build new benchmarks, 3DWeakMacth and 3DLoWeakMatch, based on 3DMatch and 3DLoMatch. Reasonable multimodal fusion enables our method to achieve state-of-the-art performance on both indoor 3DMatch, 3DLoMatch, 3DWeakMacth, and 3DLoWeakMatch benchmarks, as well as the outdoor KITTI benchmark with low alignment.
-![](/data/overview.png)
+![](/data/overview.jpg)
 ## Installation
 Please use the following command for installation.
 ```
